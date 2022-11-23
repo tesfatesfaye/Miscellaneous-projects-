@@ -12,7 +12,7 @@ fs.writeFile(path.join(__dirname,'/test','hello.txt'),
     if(err) throw err;
     console.log("Files written to....")
     fs.appendFile(path.join(__dirname,'/test','hello.txt'),
-    'Hello world',err=>{
+    'Hello world two',err=>{
     if(err) throw err;
     console.log("Files written to....")
   
@@ -22,7 +22,7 @@ fs.writeFile(path.join(__dirname,'/test','hello.txt'),
 })
 
     fs.appendFile(path.join(__dirname,'/test','hello.txt'),
-        'hello three', err=>{
+        'Hello world three', err=>{
             if(err) throw err;
             console.log("files appended")
         }
@@ -33,7 +33,7 @@ fs.readFile(path.join(__dirname,'/test','hello.txt'), 'utf-8',(err,data)=>{
     console.log(data)
 });
 
-    fs.rename(
+fs.rename(
         path.join(__dirname,'/test','hello.txt'),
         path.join(__dirname, '/test','helloworld.txt'),
         err=>{
