@@ -2,11 +2,14 @@
 const express=require('express')
 const path=require('path')
 const app=express()
-// const members=require('./Members')
+const exphbs =require('express-handlebars')
 const logger=require('./middleware/Logger')
 
 //Init middleware
-// app.use(logger);
+//HandleBars Middleware
+app.engine('handlebars',exphbs.engine({defaultLayout:'main'}));
+app.set('view engine', 'handlebars')
+app.get('/',(req,res)=> res.render('index'))
 //Body Parser Middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
