@@ -1,0 +1,24 @@
+{
+  "name": "typeis-package",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "returns the type of what ever variable is passed in lowercase letters",
+  "main": "typeIs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tesfatesfaye/Type-Is.git"
+  },
+  "keywords": [
+    "variable",
+    "type"
+  ],
+  "author": "Tesfa Tesfaye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tesfatesfaye/Type-Is/issues"
+  },
+  "homepage": "https://github.com/tesfatesfaye/Type-Is#readme"
+}
