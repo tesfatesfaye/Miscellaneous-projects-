@@ -1,0 +1,12 @@
+{
+  "name": "join_us",
+  "compilerOptions": {
+    "main": "joinusapp.js",
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
